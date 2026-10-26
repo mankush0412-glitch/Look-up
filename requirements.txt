@@ -1,0 +1,10 @@
+python-telegram-bot>=20.8,<22
+httpx>=0.26,<0.29
+python-dotenv>=1.0
+pymongo>=4.8
+dnspython>=2.6
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+
+qrcode[pil]>=7.4,<9
+cryptography>=42,<47

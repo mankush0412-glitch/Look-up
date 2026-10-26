@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Lookup Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/telegram_lookup_bot
+EnvironmentFile=/opt/telegram_lookup_bot/.env
+ExecStart=/opt/telegram_lookup_bot/venv/bin/python /opt/telegram_lookup_bot/bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
